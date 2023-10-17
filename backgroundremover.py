@@ -44,41 +44,32 @@ class BackgroundRemoverApp:
         self.root = root
         self.root.title("Background Remover by Steven")
         self.input_images = []
-
         
         frame = tk.Frame(root)
         frame.pack(padx=10, pady=10)
 
-        
         self.image_listbox = tk.Listbox(frame, selectmode=tk.MULTIPLE)
         self.image_listbox.pack(side=tk.LEFT)
 
-        
         listbox_scroll = tk.Scrollbar(frame, orient=tk.VERTICAL, command=self.image_listbox.yview)
         listbox_scroll.pack(side=tk.LEFT, fill=tk.Y)
         self.image_listbox.config(yscrollcommand=listbox_scroll.set)
-
-        
+  
         add_button = tk.Button(frame, text="Add Images", command=self.add_images)
         add_button.pack(side=tk.LEFT)
 
-       
         remove_button = tk.Button(frame, text="Remove Selected", command=self.remove_images)
         remove_button.pack(side=tk.LEFT)
 
-       
         process_button = tk.Button(frame, text="Process Images", command=self.process_images)
         process_button.pack(side=tk.LEFT)
 
-        
         exit_button = tk.Button(frame, text="Exit", command=root.quit)
         exit_button.pack(side=tk.LEFT)
 
-        
         self.progress_bar = ttk.Progressbar(self.root, orient="horizontal", length=300, mode="determinate")
         self.progress_bar.pack(pady=10)
 
-        
         self.completion_label = tk.Label(self.root, text="")
         self.completion_label.pack(pady=10)
 
@@ -114,3 +105,4 @@ if __name__ == "__main__":
     window = tk.Tk()
     app = BackgroundRemoverApp(window)
     window.mainloop()
+
