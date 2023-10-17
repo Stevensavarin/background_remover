@@ -1,6 +1,8 @@
 ## Background Remover
 ![image](https://github.com/Stevensavarin/background_remover/assets/137004357/67ae1d1d-c682-4331-92ae-2b199f45f3a0)
+
 ![image](https://github.com/Stevensavarin/background_remover/assets/137004357/92356435-80af-4c0b-999b-674d15b8501b)
+
 ![image](https://github.com/Stevensavarin/background_remover/assets/137004357/31dc3f41-60c3-4abf-9d32-7f4d70fd3b28)
 # Background Remover
 Background Remover is a simple background removal application that utilizes the "rembg" library. This tool allows you to quickly and easily eliminate unwanted backgrounds from images.
